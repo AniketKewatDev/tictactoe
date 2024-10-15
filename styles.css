@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: goldenrod;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(212, 16, 16);
+  width: 100%;
+  text-align: center;
+}
+
+.header h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes {
+  background-color: white;
+  gap: 3px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+}
+
+.box {
+  background-color: rgb(0, 23, 230);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 3rem;
+  color: white;
+}
+
+.box:hover {
+  background-color: rgba(0, 26, 255, 0.904);
+}
+
+.turnmsg {
+  width: 100%;
+  text-align: center;
+  background-color: blue;
+  margin-top: 20px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.windiv {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.windiv p {
+  font-size: 30px;
+}
+
+p {
+  font-size: 25px;
+  color: white;
+}
+
+#newgamebtn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+}
+
+#resetgamebtn {
+  margin-left: 5px;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+}
+
+#msg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
